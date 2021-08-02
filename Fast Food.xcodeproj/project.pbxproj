@@ -11,8 +11,9 @@
 		E945D3C126AFA8B100B0CD52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945D3C026AFA8B100B0CD52 /* SceneDelegate.swift */; };
 		E945D3C326AFA8B100B0CD52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945D3C226AFA8B100B0CD52 /* ViewController.swift */; };
 		E945D3C626AFA8B100B0CD52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E945D3C426AFA8B100B0CD52 /* Main.storyboard */; };
-		E945D3C826AFA8BA00B0CD52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E945D3C726AFA8BA00B0CD52 /* Assets.xcassets */; };
 		E945D3CB26AFA8BA00B0CD52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E945D3C926AFA8BA00B0CD52 /* LaunchScreen.storyboard */; };
+		E945D3D626B0C2BE00B0CD52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E945D3D526B0C2BE00B0CD52 /* Assets.xcassets */; };
+		E945D3E226B3E0C900B0CD52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945D3E126B3E0C900B0CD52 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +22,10 @@
 		E945D3C026AFA8B100B0CD52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E945D3C226AFA8B100B0CD52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E945D3C526AFA8B100B0CD52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E945D3C726AFA8BA00B0CD52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E945D3CA26AFA8BA00B0CD52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E945D3CC26AFA8BA00B0CD52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E945D3D526B0C2BE00B0CD52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E945D3E126B3E0C900B0CD52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		E945D3BD26AFA8B100B0CD52 /* Fast Food */ = {
 			isa = PBXGroup;
 			children = (
-				E945D3BE26AFA8B100B0CD52 /* AppDelegate.swift */,
-				E945D3C026AFA8B100B0CD52 /* SceneDelegate.swift */,
-				E945D3C226AFA8B100B0CD52 /* ViewController.swift */,
-				E945D3C426AFA8B100B0CD52 /* Main.storyboard */,
-				E945D3C726AFA8BA00B0CD52 /* Assets.xcassets */,
-				E945D3C926AFA8BA00B0CD52 /* LaunchScreen.storyboard */,
+				E945D3DE26B3DFBB00B0CD52 /* Controllers */,
+				E945D3DD26B3DFA500B0CD52 /* Views */,
 				E945D3CC26AFA8BA00B0CD52 /* Info.plist */,
+				E945D3E026B3DFD900B0CD52 /* Helping files */,
 			);
 			path = "Fast Food";
+			sourceTree = "<group>";
+		};
+		E945D3DD26B3DFA500B0CD52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E945D3C426AFA8B100B0CD52 /* Main.storyboard */,
+				E945D3C926AFA8BA00B0CD52 /* LaunchScreen.storyboard */,
+				E945D3D526B0C2BE00B0CD52 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E945D3DE26B3DFBB00B0CD52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E945D3C226AFA8B100B0CD52 /* ViewController.swift */,
+				E945D3E126B3E0C900B0CD52 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E945D3E026B3DFD900B0CD52 /* Helping files */ = {
+			isa = PBXGroup;
+			children = (
+				E945D3BE26AFA8B100B0CD52 /* AppDelegate.swift */,
+				E945D3C026AFA8B100B0CD52 /* SceneDelegate.swift */,
+			);
+			path = "Helping files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E945D3CB26AFA8BA00B0CD52 /* LaunchScreen.storyboard in Resources */,
-				E945D3C826AFA8BA00B0CD52 /* Assets.xcassets in Resources */,
+				E945D3D626B0C2BE00B0CD52 /* Assets.xcassets in Resources */,
 				E945D3C626AFA8B100B0CD52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +167,7 @@
 				E945D3C326AFA8B100B0CD52 /* ViewController.swift in Sources */,
 				E945D3BF26AFA8B100B0CD52 /* AppDelegate.swift in Sources */,
 				E945D3C126AFA8B100B0CD52 /* SceneDelegate.swift in Sources */,
+				E945D3E226B3E0C900B0CD52 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.san.Fast-Food";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.san.Fast-Food";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
