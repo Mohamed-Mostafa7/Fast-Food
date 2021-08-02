@@ -14,7 +14,16 @@ class HomeViewController: UIViewController {
         
     }
     
-    @IBOutlet var imageView: UIImageView!
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if OnBoard.shared.isNewUser() {
+            // show onboarding
+            guard let vc = storyboard?.instantiateViewController(identifier: "OnBoard") as? WelcomeViewController else { return }
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: false)
+        }
+    }
     
 
 }

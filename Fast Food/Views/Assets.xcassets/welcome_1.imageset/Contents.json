@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Fast-Food-Logo-Design2.png",
+      "filename" : "order.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "order@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "order@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

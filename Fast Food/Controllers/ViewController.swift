@@ -52,7 +52,7 @@ class ViewController: UIViewController {
                     if let vc = self.storyboard?.instantiateViewController(identifier: "Home") as? HomeViewController {
                         vc.modalTransitionStyle = .crossDissolve
                         vc.modalPresentationStyle = .fullScreen
-                        self.present(vc, animated: true)
+                        self.present(vc, animated: false)
                     }
                 }
             }
